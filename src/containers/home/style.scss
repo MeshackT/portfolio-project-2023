@@ -1,0 +1,120 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+
+
+    &_text-wrapper {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            color: var(--yellow-theme-main-color);
+            margin: 0px;
+            font-weight: 500;
+            font-size: 3.2rem;
+            line-height: 6rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingEffectAnimation 2.5s steps(30, end);
+        }
+    }
+
+    &_contact-me button {
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14;
+        background: transparent;
+        color: var(--yellow-theme-main-color);
+        border: .08rem solid var(--yellow-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
+        margin-top: 15px;
+
+        &:hover{
+            background: var(--yellow-theme-main-color);
+        color: #000000;
+        }
+    }
+}
+
+
+
+@media screen and (max-width : 550px) {
+    .home_text-wrapper h1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .home_contact-me button{
+        font-weight: 500;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width : 768px) {
+    .home_text-wrapper h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .home_contact-me button{
+        font-weight: 500;
+        margin-top: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width : 990px) {
+    .home_text-wrapper h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        
+    }
+    .home_contact-me button{
+        font-weight: 500;
+        margin-top: 7px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: .8rem;
+    }
+
+}
+
+@keyframes typingEffectAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
