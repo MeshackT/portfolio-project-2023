@@ -1,0 +1,184 @@
+.skills {
+
+    &_content {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+
+
+        &_personalWrapper, &_content_serviceWrapper{
+            width: 50%;
+        }
+
+        
+
+        &_personalWrapper {
+            h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: var(--yellow-theme-main-color);
+
+            }
+
+            h3.personalInformationHeader {
+                padding-top: 20px;
+            }
+
+            p {
+                color: var(--yellow-theme-sub-text-color);
+                font-size: 1.1 rem;
+                line-height: 1.4rem;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed var(--yellow-theme-main-color);
+            }
+
+        }
+
+        &_serviceWrapper {
+            justify-content: start;
+            align-items: start;
+
+            h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: var(--yellow-theme-main-color);
+            }
+
+            h3.personalInformationHeader {
+                padding-top: 20px;
+            }
+    
+            ul>li {
+                line-height: 1.4rem;
+                margin-bottom: 15px;
+                text-decoration: none;
+                list-style: none;
+                
+                 span.value{
+                    color: var(--yellow-theme-sub-text-color);
+                    font-size: 1.1 rem;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    letter-spacing: .5px;
+                    display: inline-block;
+                }
+             
+                span.value{
+                    margin-left: 20px;
+                }
+
+                
+            }
+            
+            
+
+
+        }
+       
+    }
+    &_icons_skils{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+        &_1{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+
+            
+            h3{
+                // margin-right: 20px;
+                color: var(--yellow-theme-main-color);
+            }
+            &_1{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width : 768px) {
+    .skills {
+       
+    &_content {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+       
+        
+        &_personalWrapper, &_serviceWrapper{
+            width: 100%;
+            
+        }
+        
+        
+        &_personalWrapper{
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: var(--yellow-theme-main-color);
+            }
+        }
+        &_serviceWrapper {
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+    
+        }
+        
+
+    }
+    &_icons_skils{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        
+       
+        &_1{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: start;
+            justify-items: start;
+            justify-content: center;
+            flex-direction: column;
+
+            &_1{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                flex-direction: row;
+                h3{
+                    margin-left: 50px;
+                }
+
+            }
+        }
+    }
+   
+}
+}

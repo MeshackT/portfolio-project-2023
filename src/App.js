@@ -36,7 +36,7 @@ function App() {
       <Navbar />
 
       {/* main page content */}
-      <div className='App_main-page-content'></div>
+      {/* <div className='App_main-page-content'></div> */}
 
 
       <Routes>
