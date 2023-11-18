@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeaderContent from '../../components/pageHeaderContent';
 import { BsInfoCircleFill } from 'react-icons/bs';
 import { Animate } from 'react-simple-animate';
+import './style.scss'
 
 const personalDetails = [
     { label: "", value: "Junior Flutter and Dart front-end developer" },
@@ -18,16 +19,17 @@ const personalDetails = [
 ]
 
 const Skills = () => {
+
     return (
-        <section id='skills' className='skills'>
+        <section id='skill' className='skill'>
             <PageHeaderContent
-                headerText="My Skills"
+                headerText="My skills"
                 icon={<BsInfoCircleFill size={40} />}
             />
 
-            <div className='skills_content'>
-                
-                <div className='skills_content_serviceWrapper'>
+            <div className='skill_content'>
+            
+                <div className='skill_content_serviceWrapper'>
                     <Animate
                         play
                         duration={1.1}
@@ -41,13 +43,13 @@ const Skills = () => {
 
                         }}
                     >
-                        <h3 className='personalInformationHeader'>Personal Details</h3>
+                        <h3 className='personalInformationHeader'>Professional Skills</h3>
 
                         <ul>
 
                             {personalDetails.map((item, i) => (
                                 <li key={i}>
-
+                                
                                     <span className='value'>
                                         {item.value}
                                     </span>
@@ -61,8 +63,10 @@ const Skills = () => {
                 </div>
 
             </div>
-
+    
         </section>
+
+
     )
 }
 export default Skills;

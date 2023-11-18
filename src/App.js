@@ -22,6 +22,7 @@ function App() {
   }
 
   const renderParticleJsInHomePage = location.pathname === "/";
+  const renderParticleJsInSkillsPage = location.pathname === "/skills";
 
   return (
     <div className="App">
@@ -29,6 +30,10 @@ function App() {
       {/* particles js} */}
       {
         renderParticleJsInHomePage && <Particles id="particles" options={particles} init={handleInit} />
+
+      }
+        {
+        renderParticleJsInSkillsPage && <Particles id="particles" options={particles} init={handleInit} />
 
       }
  
