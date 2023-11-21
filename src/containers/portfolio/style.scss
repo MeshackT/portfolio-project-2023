@@ -112,7 +112,31 @@
         width: 100%;
         display: inline-block;
         flex-direction: column;
-  
+        &_filter {
+          display: inline-block;
+          justify-content: center;
+          margin: 0 auto;
+          border: 1px dashed;
+          border-radius: 75px;
+          color: var(--yellow-theme-main-color);
+          text-decoration: none;
+          list-style: none;
+    
+          li {
+            font-size: 12px;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            color: var(--yellow-theme-main-color);
+            text-transform: uppercase;
+            padding: 6px 12px;
+            overflow: hidden;
+            transition: color 0.5s ease;
+            letter-spacing: .4px;
+    
+        
+          }
+        }
         &_cards {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -129,7 +153,31 @@
           width: 100%;
           display: inline-block;
           flex-direction: column;
-  
+          &_filter {
+            display: inline-block;
+            justify-content: center;
+            margin: 0 auto;
+            border: 1px dashed;
+            border-radius: 75px;
+            color: var(--yellow-theme-main-color);
+            text-decoration: none;
+            list-style: none;
+      
+            li {
+              font-size: 12px;
+              display: inline-block;
+              cursor: pointer;
+              position: relative;
+              color: var(--yellow-theme-main-color);
+              text-transform: uppercase;
+              padding: 6px 12px;
+              overflow: hidden;
+              transition: color 0.5s ease;
+              letter-spacing: .4px;
+      
+          
+            }
+          }
           &_cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);

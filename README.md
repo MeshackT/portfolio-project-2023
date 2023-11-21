@@ -82,6 +82,7 @@ What do you want to use as your public directory? build
 +  Wrote build/index.html
 
 i  Writing configuration info to firebase.json...
+
 i  Writing project information to .firebaserc...
 
 +  Firebase initialization complete!
