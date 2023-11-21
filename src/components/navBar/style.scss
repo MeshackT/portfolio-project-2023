@@ -12,13 +12,14 @@ div{
 }
 
 .navbar {
-    background-color: var(--yellow-theme-nave-background-color);
+    background-color: var(--yellow-theme-nav-background-color);
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
+    z-index: 1000; 
 
 
     &_container {
@@ -32,6 +33,7 @@ div{
         &_logo {
             color: var(--yellow-theme-main-color);
             cursor: pointer;
+            text-decoration: none;
 
 
         }
@@ -43,6 +45,7 @@ div{
             text-align: center;
             color: var(--yellow-theme-main-color);
             cursor: pointer;
+            background-color: var(--yellow-theme-nav-background-color);
 
             &_item {
                 line-height: 40px;
@@ -95,9 +98,10 @@ div{
         left: -110%;
         opacity: 100%;
         transition: all 0.5s ease;
+        z-index: 1000; 
 
         &.active {
-            background: #181818;
+            background-color: #181818;
             left: 0px;
             opacity: 100%;
         }

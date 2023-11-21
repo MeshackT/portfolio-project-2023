@@ -7,14 +7,13 @@ import './style.scss'
 const personalDetails = [
     { label: "", value: "Junior Flutter and Dart front-end developer" },
     { label: "", value: "Junior Java developer" },
+    { label: "", value: "Basic HTML and CSS" },
     { label: "", value: "Firebase and MySQL database" },
     { label: "", value: "Git/GitHub" },
     { label: "", value: "Microsoft 365" },
     { label: "", value: "IT Essentials" },
     { label: "", value: "Network troubleshooting" },
     { label: "", value: "IT support" },
-
-
 
 ]
 

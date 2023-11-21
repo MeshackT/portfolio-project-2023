@@ -13,10 +13,10 @@ const data = [
         label: 'ABOUT',
         to: '/about'
     },
-    {
-        label: 'RESUME',
-        to: '/resume'
-    },
+    // {
+    //     label: 'RESUME',
+    //     to: '/resume'
+    // },
     {
         label: 'SKILLS',
         to: '/skills'
@@ -45,7 +45,7 @@ const Navbar = () => {
             <nav className='navbar'>
                 <div className='navbar_container'>
                     <Link to={'/'} className='navbar_container_logo'>
-                        <FaReact size={30} />
+                        <h3>FSH.</h3>
                     </Link>
                 </div>
                 <ul className={`navbar_container_menu ${toggleIcons ? "active" : ""}`}>

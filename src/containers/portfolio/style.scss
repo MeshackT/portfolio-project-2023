@@ -1,0 +1,143 @@
+.portfolio {
+    &_content {
+      padding: 20px;
+      width: 100%;
+      display: inline-block;
+  
+      &_filter {
+        display: inline-block;
+        justify-content: center;
+        margin: 0 auto;
+        border: 1px dashed;
+        border-radius: 75px;
+        color: var(--yellow-theme-main-color);
+        text-decoration: none;
+        list-style: none;
+  
+        li {
+          font-size: 16px;
+          display: inline-block;
+          cursor: pointer;
+          position: relative;
+          color: var(--yellow-theme-main-color);
+          text-transform: uppercase;
+          padding: 10px 20px;
+          overflow: hidden;
+          transition: color 0.5s ease;
+          letter-spacing: 1px;
+  
+          &:hover {
+            color: var(--yellow-theme-sub-text-color);
+          }
+  
+          &.active {
+            color: var(--yellow-theme-sub-text-color);
+            background-color: var(--yellow-theme-main-color);
+            border-radius: 75px;
+          }
+        }
+      }
+  
+      &_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.05rem;
+        margin-top: 10px;
+  
+        &_item {
+          display: flex;
+          justify-content: center;
+          height: 366px;
+          cursor: pointer;
+          position: relative;
+          background-color: var(--yellow-theme-sub-text-color);
+          margin: 5px;
+          transition: background-color 0.5s ease;
+  
+          &:hover {
+            // background-color: var(--your-hover-color); // Change background color on hover
+          }
+  
+          &_img-wrapper {
+            height: 100%;
+            width: 100%;
+            position: relative;
+  
+            a {
+              display: block;
+              height: 100%;
+  
+              img {
+                height: 100%;
+                object-fit: contain;
+                width: 100%;
+                transition: filter 0.5s ease;
+  
+                &:hover {
+                  filter: brightness(100%); // Adjust brightness on hover
+                }
+              }
+            }
+  
+            cursor: pointer;
+            position: relative;
+            &:hover {
+              transform: scale(1.1); // Scale overlay on hover
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+              opacity: 0;
+              transition: opacity 0.5s ease, transform 0.5s ease;
+  
+              &:hover {
+                // opacity: .4; // Show overlay on hover
+                transform: scale(1.1); // Scale overlay on hover
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .portfolio {
+      &_content {
+        padding: 20px;
+        width: 100%;
+        display: inline-block;
+        flex-direction: column;
+  
+        &_cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.05rem;
+          margin-top: 3px;
+        }
+      }
+    }
+  
+    @media screen and (min-width: 200px) and (max-width: 900px) {
+      .portfolio {
+        &_content {
+          padding: 20px;
+          width: 100%;
+          display: inline-block;
+          flex-direction: column;
+  
+          &_cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0.05rem;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+  

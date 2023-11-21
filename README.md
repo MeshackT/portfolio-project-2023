@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+@babel/plugin-proposal-private-property-in-object
+
+
+firebase deploy
+
+firebase init
+What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File build/index.html already exists. Overwrite? Yes
++  Wrote build/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+ npm run build
+>>
+
+> portfolio-project-2023@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+
+

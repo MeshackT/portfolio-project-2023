@@ -25,8 +25,8 @@ div {
         text-align: center;
 
         h1 {
-            color: var(--yellow-theme-main-color);
             margin: 0px;
+            color: var(--yellow-theme-main-color);
             font-weight: 500;
             font-size: 3.2rem;
             line-height: 6rem;
@@ -35,9 +35,30 @@ div {
             white-space: nowrap;
             animation: typingEffectAnimation 2.5s steps(30, end);
         }
+        // h3 {
+        //     color: var(--yellow-theme-main-color);
+        //     font-weight: 400;
+        //     line-height: 5rem;
+        //     position: relative;
+        //     overflow: hidden;
+        //     white-space: nowrap;
+        //     animation: typingEffectAnimation 2.5s steps(30, end);
+        // }
     }
 
+    &_contactLink{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        // justify-content: center;
+        justify-content: space-evenly;    
+    }
+    &_contact-me{
+        display: inline-block;
+        flex-direction: row;
+    }
     &_contact-me button {
+        
         cursor: pointer;
         padding-left: 20px;
         padding-right: 20px;
@@ -47,9 +68,10 @@ div {
         background: transparent;
         color: var(--yellow-theme-main-color);
         border: .08rem solid var(--yellow-theme-main-color);
-        border-radius: 4px;
+        border-radius: 45px;
         font-weight: 500;
         margin-top: 15px;
+        margin-right: 15px;
 
         &:hover {
             background: var(--yellow-theme-main-color);
@@ -64,11 +86,13 @@ div {
     .home_text-wrapper h1 {
         font-size: 1.2rem;
         line-height: 2rem;
+        margin-top: 30px;
+
     }
 
     .home_contact-me button {
         font-weight: 500;
-        margin-top: 10px;
+        margin-top: 30px;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 10px;
@@ -81,11 +105,13 @@ div {
     .home_text-wrapper h1 {
         font-size: 2rem;
         line-height: 3rem;
+        margin-top: 30px;
+
     }
 
     .home_contact-me button {
         font-weight: 500;
-        margin-top: 8px;
+        margin-top: 30px;
         padding-left: 8px;
         padding-right: 8px;
         padding-top: 8px;
@@ -98,12 +124,13 @@ div {
     .home_text-wrapper h1 {
         font-size: 4rem;
         line-height: 5rem;
+        margin-top: 30px;
 
     }
 
     .home_contact-me button {
         font-weight: 500;
-        margin-top: 7px;
+        margin-top: 30px;
         padding-left: 8px;
         padding-right: 8px;
         padding-top: 8px;

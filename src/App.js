@@ -7,7 +7,7 @@ import Home from './containers/home';
 import Navbar from './components/navBar';
 import About from './containers/about'; // Import About component
 import Skills from './containers/skills'; // Import Skills component
-import Resume from './containers/resume'; // Import Resume component
+// import Resume from './containers/resume'; // Import Resume component
 import Contact from './containers/contact'; // Import Contact component
 import Portfolio from './containers/portfolio'; // Import Portfolio component
 import particles from './Utils/particles';
@@ -23,6 +23,8 @@ function App() {
 
   const renderParticleJsInHomePage = location.pathname === "/";
   const renderParticleJsInSkillsPage = location.pathname === "/skills";
+  // const renderParticleJsInContactPage = location.pathname === "/contact";
+
 
   return (
     <div className="App">
@@ -36,6 +38,10 @@ function App() {
         renderParticleJsInSkillsPage && <Particles id="particles" options={particles} init={handleInit} />
 
       }
+       {/* {
+        renderParticleJsInContactPage && <Particles id="particles" options={particles} init={handleInit} />
+
+      } */}
  
       {/* navBar */}
       <Navbar />
@@ -49,7 +55,7 @@ function App() {
         <Route index path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/skills' element={<Skills />} />
-        <Route path='/resume' element={<Resume />} />
+        {/* <Route path='/resume' element={<Resume />} /> */}
         <Route path='/contact' element={<Contact />} />
         <Route path='/portfolio' element={<Portfolio />} />
       </Routes>
